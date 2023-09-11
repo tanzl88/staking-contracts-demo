@@ -1,13 +1,24 @@
-# Sample Hardhat Project
+### Staking Contract with the following features:
+1. Stake ERC20 tokens
+2. Whitelist addresses that can stake
+3. Basic security features such as Ownable and ReeentrancyGuard
+4. Test cases
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+### Demo Contracts are deployed on Polygon Mumbai Testnet:
+Mock Token: 0xD243805353884D606c30c69FA0440E5D87Bf53d7 \
+Staking Contract: 0xC288d45f7BC48d769371B8F75D8208Ee35c739c1
 
-Try running some of the following tasks:
-
+## To compile
 ```shell
-npx hardhat help
+npx hardhat compile
+```
+
+## To test
+```shell
 npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+```
+
+## To deploy
+```shell
+npx hardhat deploy --network <network>
 ```
